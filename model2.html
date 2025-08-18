@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>View Model 2 - AR</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f4f4f4; text-align: center; }
+    h1 { margin-top: 30px; }
+    .viewer { margin: 40px auto; }
+    .back { margin-top: 20px; display: inline-block; color: #007bff; text-decoration: none; }
+    .back:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <h1>Model 2 (AR View)</h1>
+  <div class="viewer">
+    <a rel="ar" href="models/model2.usdz">
+      <img src="images/model2.jpg" alt="View in AR" style="width:200px;">
+      <p>Tap to view in AR (iOS)</p>
+    </a>
+    <model-viewer src="models/model2.glb" alt="3D Model" auto-rotate camera-controls ar ios-src="models/model2.usdz" style="width: 100%; max-width: 400px; height: 400px; margin: 0 auto; display: block;"></model-viewer>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  </div>
+  <a href="index.html" class="back">&larr; Back to Gallery</a>
+</body>
+</html>
